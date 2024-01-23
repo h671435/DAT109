@@ -9,6 +9,8 @@ public class Terning {
     }
 
     public int trill() {
-        return random.nextInt(1, 7); // Ikkje inklusiv sju
+        int terningkast = random.nextInt(1, 7); // Ikkje inklusiv sju
+        System.out.println("Du trilte: " + terningkast);
+        return terningkast;
     }
 }

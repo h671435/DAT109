@@ -22,11 +22,16 @@ public class Stigespill {
     }
 
     public void spill() {
+        int i = 1;
         while (vinner == null) {
+            System.out.println("Runde: " + i +"\n--------------------------");
+            i++;
             spillRunde();
         }
 
-        JOptionPane.showMessageDialog(null, vinner.getNavn() + " er vinneren av ditta spelet! ");
+        JOptionPane.showMessageDialog(null, vinner.getNavn()
+                + " er vinneren av ditta spelet!");
+        System.out.println(vinner.getNavn() + " er vinneren av ditta spelet!");
     }
 
     private boolean sjekkSeier(Spiller spiller) {
@@ -35,8 +40,12 @@ public class Stigespill {
 
     private void spillRunde() {
         for (Spiller spiller : spillere) {
+            System.out.println("Spiller: " + spiller.getNavn());
+            System.out.println("Du står i: " + spiller.getBrikke().getPosisjon().getRutePosisjon());
             int nyPos = spiller.spillTrekk(terning);
             Rute r = brett.finnRute(nyPos);
+            System.out.println("Ny posisjon: " + r.getRutePosisjon() + "\n");
+
             spiller.flyttBrikke(r);
             if (sjekkSeier(spiller)) {
                 vinner = spiller;

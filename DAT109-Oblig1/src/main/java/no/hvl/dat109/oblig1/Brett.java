@@ -8,9 +8,9 @@ public class Brett {
     private final Rute startposisjon;
     public Brett() {
         this.startposisjon = new Rute(0);
-        ruter = new ArrayList<>(107);
-        for(int i = 1;i <= 107; i++) {
-            ruter.add(new Rute(i));
+        ruter = new ArrayList<>(106);
+        for(int i = 0;i <= 106; i++) {
+            ruter.add(new Rute(i+1));
         }
     }
 
@@ -19,6 +19,6 @@ public class Brett {
     }
 
     public Rute finnRute(int n) {
-        return ruter.get(n);
+        return ruter.get(n - 1);
     }
 }
