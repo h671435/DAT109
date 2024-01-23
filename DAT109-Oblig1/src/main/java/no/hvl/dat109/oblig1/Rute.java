@@ -4,6 +4,10 @@ public class Rute {
 
     private final int rutePosisjon;
 
+    public int getRutePosisjon() {
+        return rutePosisjon;
+    }
+
     public Rute(int rutePosisjon) {
         this.rutePosisjon = rutePosisjon;
     }

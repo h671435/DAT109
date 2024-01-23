@@ -10,7 +10,20 @@ public class Spiller {
         this.brikke = brikke;
     }
 
-    public void spillTrekk(Terning terning) {
-        int steg = terning.trill();
+    public int spillTrekk(Terning terning) {
+        return terning.trill() + brikke.getPosisjon().getRutePosisjon();
     }
+
+    public void flyttBrikke(Rute nyPos) {
+        brikke.setPosisjon(nyPos);
+    }
+
+    public String getNavn() {
+        return navn;
+    }
+
+    public Brikke getBrikke() {
+        return brikke;
+    }
+
 }

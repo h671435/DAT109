@@ -10,11 +10,15 @@ public class Brett {
         this.startposisjon = new Rute(0);
         ruter = new ArrayList<>(100);
         for(int i = 1;i <= 100; i++) {
-            ruter.set(i, new Rute(i));
+            ruter.add(new Rute(i));
         }
     }
 
     public Rute getStartposisjon() {
         return startposisjon;
+    }
+
+    public Rute finnRute(int n) {
+        return ruter.get(n);
     }
 }

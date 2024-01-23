@@ -8,4 +8,12 @@ public class Brikke {
         this.farge = farge;
         this.posisjon = posisjon;
     }
+
+    public void setPosisjon(Rute posisjon) {
+        this.posisjon = posisjon;
+    }
+
+    public Rute getPosisjon() {
+        return posisjon;
+    }
 }

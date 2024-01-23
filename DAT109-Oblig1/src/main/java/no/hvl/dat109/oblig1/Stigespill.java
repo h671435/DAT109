@@ -9,6 +9,8 @@ public class Stigespill {
     private final Brett brett;
     private final List<Spiller> spillere;
 
+    private Spiller vinner = null;
+
     public Stigespill() {
         spillere = new ArrayList<>();
         brett = new Brett();
@@ -20,14 +22,26 @@ public class Stigespill {
     }
 
     public void spill() {
-        while (true) {
+        while (vinner == null) {
             spillRunde();
         }
+
+        JOptionPane.showMessageDialog(null, vinner.getNavn() + " er vinneren av ditta spelet! ");
+    }
+
+    private boolean sjekkSeier(Spiller spiller) {
+        return spiller.getBrikke().getPosisjon().getRutePosisjon() >= 100;
     }
 
     private void spillRunde() {
         for (Spiller spiller : spillere) {
-            spiller.spillTrekk(terning);
+            int nyPos = spiller.spillTrekk(terning);
+            Rute r = brett.finnRute(nyPos);
+            spiller.flyttBrikke(r);
+            if (sjekkSeier(spiller)) {
+                vinner = spiller;
+                break;
+            }
         }
     }
 
@@ -36,7 +50,7 @@ public class Stigespill {
         int antallSpillere = Integer.parseInt(input);
 
         boolean erGydlig = false;
-        while(!erGydlig) {
+        while (!erGydlig) {
             if (antallSpillere < 2 || antallSpillere > 4) {
                 antallSpillere = Integer.parseInt(JOptionPane.showInputDialog
                         ("Vennligst skriv inn et tall fra 2-4"));
@@ -45,11 +59,10 @@ public class Stigespill {
             }
         }
         for (int i = 0; i < antallSpillere; i++) {
-            String spillerNavn = JOptionPane.showInputDialog("Hva er navnet på spiller " + (i+1));
+            String spillerNavn = JOptionPane.showInputDialog("Hva er navnet på spiller " + (i + 1));
             String spillerBrikke = JOptionPane.showInputDialog("Hvilke farge er du");
             Brikke brikke = new Brikke(spillerBrikke, brett.getStartposisjon());
-            spillere.set(i, new Spiller(spillerNavn, brikke));
+            spillere.add(new Spiller(spillerNavn, brikke));
         }
-
     }
 }
