@@ -8,8 +8,8 @@ public class Brett {
     private final Rute startposisjon;
     public Brett() {
         this.startposisjon = new Rute(0);
-        ruter = new ArrayList<>(100);
-        for(int i = 1;i <= 100; i++) {
+        ruter = new ArrayList<>(107);
+        for(int i = 1;i <= 107; i++) {
             ruter.add(new Rute(i));
         }
     }
