@@ -1,6 +1,7 @@
 package no.hvl.dat109.oblig1;
 
 import javax.swing.*;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -39,7 +40,12 @@ public class Stigespill {
     }
 
     private void spillRunde() {
-        for (Spiller spiller : spillere) {
+	    try {
+            System.out.println("Trykk enter for å starte!");
+		    System.in.read();
+	    } catch (IOException e) {
+	    }
+	    for (Spiller spiller : spillere) {
             System.out.println("Spiller: " + spiller.getNavn());
             System.out.println("Du står i: " + spiller.getBrikke().getPosisjon().getRutePosisjon());
             int nyPos = spiller.spillTrekk(terning);
