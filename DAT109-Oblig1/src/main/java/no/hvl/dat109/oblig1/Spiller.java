@@ -11,6 +11,6 @@ public class Spiller {
     }
 
     public void spillTrekk(Terning terning) {
-        int steg = terning.trill();L
+        int steg = terning.trill();
     }
 }
