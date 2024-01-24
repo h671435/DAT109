@@ -15,5 +15,9 @@ class BrettTest {
 
     @Test
     void finnRute() {
+        Brett brett = new Brett();
+        Rute rute = brett.finnRute(5);
+        assertNotNull(rute);
+        assertEquals(5, rute.getRutePosisjon());
     }
 }
