@@ -78,9 +78,8 @@ public class Stigespill {
         }
         for (int i = 0; i < antallSpillere; i++) {
             String spillerNavn = JOptionPane.showInputDialog("Hva er navnet på spiller " + (i + 1));
-            String spillerBrikke = JOptionPane.showInputDialog("Hvilke farge er du");
-            Brikke brikke = new Brikke(spillerBrikke, brett.getStartposisjon());
-            spillere.add(new Spiller(spillerNavn, brikke));
+            String farge = JOptionPane.showInputDialog("Hvilke farge er du");
+            spillere.add(new Spiller(spillerNavn, farge, brett));
         }
     }
 }

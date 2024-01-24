@@ -4,10 +4,12 @@ public class Spiller {
 
     private final String navn;
     private final Brikke brikke;
+    private final Brett brett;
 
-    public Spiller(String spillerNavn, Brikke brikke) {
+    public Spiller(String spillerNavn, String farge, Brett brett) {
         this.navn = spillerNavn;
-        this.brikke = brikke;
+        this.brikke = new Brikke(farge, brett.getStartposisjon());
+        this.brett = brett;
     }
 
     public int spillTrekk(Terning terning) {
