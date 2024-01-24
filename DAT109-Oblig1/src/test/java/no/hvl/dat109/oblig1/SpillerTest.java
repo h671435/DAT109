@@ -12,14 +12,19 @@ class SpillerTest {
     }
 
     @Test
-    void flyttBrikke() {
-    }
-
-    @Test
     void getNavn() {
+        Brett brett = new Brett();
+        Spiller spiller = new Spiller("Player1", "red", brett);
+
+        assertEquals("Player1", spiller.getNavn());
     }
 
     @Test
     void getBrikke() {
+        Brett brett = new Brett();
+        Spiller spiller = new Spiller("Player1", "red", brett);
+
+        assertNotNull(spiller.getBrikke());
+        assertEquals(brett.getStartposisjon(), spiller.getBrikke().getPosisjon());
     }
 }
