@@ -4,6 +4,11 @@ public class Rute {
 
     private final int rutePosisjon;
 
+    @Override
+    public String toString() {
+        return "" + rutePosisjon;
+    }
+
     public int getRutePosisjon() {
         return rutePosisjon;
     }

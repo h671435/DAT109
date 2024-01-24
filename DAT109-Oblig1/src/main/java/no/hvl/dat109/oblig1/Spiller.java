@@ -12,12 +12,20 @@ public class Spiller {
         this.brett = brett;
     }
 
-    public int spillTrekk(Terning terning) {
-        return terning.trill() + brikke.getPosisjon().getRutePosisjon();
-    }
+    public void spillTrekk(Terning terning) {
+        int nyPos = terning.trill() + brikke.hentRutePosisjon();
+        if (nyPos <= 100) {
+            Rute nyRute = brett.finnRute(nyPos);
+            brikke.setPosisjon(nyRute);
+            System.out.println("Ny posisjon: " + nyPos);
+            Rute stigeSlutt = brett.harStige(nyRute);
 
-    public void flyttBrikke(Rute nyPos) {
-        brikke.setPosisjon(nyPos);
+            if(stigeSlutt != null) {
+                brikke.setPosisjon(stigeSlutt);
+            }
+        } else {
+            System.out.println("Du trilte mer enn hundre. Du må treffe hundre presist for å vinna spelet");
+        }
     }
 
     public String getNavn() {

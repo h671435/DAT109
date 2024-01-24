@@ -16,4 +16,8 @@ public class Brikke {
     public Rute getPosisjon() {
         return posisjon;
     }
+
+    public int hentRutePosisjon() {
+        return posisjon.getRutePosisjon();
+    }
 }

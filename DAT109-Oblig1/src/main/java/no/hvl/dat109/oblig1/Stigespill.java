@@ -36,7 +36,7 @@ public class Stigespill {
     }
 
     private boolean sjekkSeier(Spiller spiller) {
-        return spiller.getBrikke().getPosisjon().getRutePosisjon() >= 100;
+        return spiller.getBrikke().hentRutePosisjon() >= 100;
     }
 
     private void spillRunde() {
@@ -47,19 +47,14 @@ public class Stigespill {
 	    }
 	    for (Spiller spiller : spillere) {
             System.out.println("Spiller: " + spiller.getNavn());
-            System.out.println("Du står i: " + spiller.getBrikke().getPosisjon().getRutePosisjon());
-            int nyPos = spiller.spillTrekk(terning);
-
-            if (nyPos <= 100) {
-                Rute r = brett.finnRute(nyPos);
-                System.out.println("Ny posisjon: " + r.getRutePosisjon());
-                spiller.flyttBrikke(r);
-            }
+            System.out.println("Du står i: " + spiller.getBrikke().hentRutePosisjon());
+            spiller.spillTrekk(terning);
 
             if (sjekkSeier(spiller)) {
                 vinner = spiller;
                 break;
             }
+            System.out.println();
         }
     }
 
@@ -69,7 +64,7 @@ public class Stigespill {
 
         boolean erGydlig = false;
         while (!erGydlig) {
-            if (antallSpillere < 2 || antallSpillere > 4) {
+            if (antallSpillere < 2 || antallSpillere > 5) {
                 antallSpillere = Integer.parseInt(JOptionPane.showInputDialog
                         ("Vennligst skriv inn et tall fra 2-4"));
             } else {
