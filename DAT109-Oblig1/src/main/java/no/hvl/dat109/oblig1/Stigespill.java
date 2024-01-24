@@ -25,7 +25,7 @@ public class Stigespill {
     public void spill() {
         int i = 1;
         while (vinner == null) {
-            System.out.println("Runde: " + i +"\n--------------------------");
+            System.out.println("\nRunde: " + i +"\n--------------------------");
             i++;
             spillRunde();
         }
@@ -49,10 +49,13 @@ public class Stigespill {
             System.out.println("Spiller: " + spiller.getNavn());
             System.out.println("Du står i: " + spiller.getBrikke().getPosisjon().getRutePosisjon());
             int nyPos = spiller.spillTrekk(terning);
-            Rute r = brett.finnRute(nyPos);
-            System.out.println("Ny posisjon: " + r.getRutePosisjon() + "\n");
 
-            spiller.flyttBrikke(r);
+            if (nyPos <= 100) {
+                Rute r = brett.finnRute(nyPos);
+                System.out.println("Ny posisjon: " + r.getRutePosisjon());
+                spiller.flyttBrikke(r);
+            }
+
             if (sjekkSeier(spiller)) {
                 vinner = spiller;
                 break;
