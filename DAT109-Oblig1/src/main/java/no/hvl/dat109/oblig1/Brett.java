@@ -3,11 +3,17 @@ package no.hvl.dat109.oblig1;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Lager et brett å spille stigespill på
+ */
 public class Brett {
     private final List<Rute> ruter;
     private final Rute startposisjon;
     private final List<Stige> stiger;
 
+    /**
+     * Konstruktør som oppretter et brett med ruter, startposisjon og stiger/slanger.
+     */
     public Brett() {
         this.startposisjon = new Rute(0);
         ruter = new ArrayList<>(106);
@@ -39,14 +45,30 @@ public class Brett {
         stiger.add(new Stige(finnRute(98), finnRute(88), StigeEnum.NED));
     }
 
+    /**
+     * Henter startposisjonen for en brikke på brettet. Starter på rute 0.
+     * @return Startposisjon rute
+     */
     public Rute getStartposisjon() {
         return startposisjon;
     }
 
+    /**
+     * Finner rute basert på en heltall posisjon
+     *
+     * @param n Rutenummeret som skal finnes
+     * @return Ruten med den posisjonen du skal ha
+     */
     public Rute finnRute(int n) {
         return ruter.get(n - 1);
     }
 
+    /**
+     * Finner sjekker om en rute har en stige. Sjekker deretter hvor stigen fører til
+     *
+     * @param posisjon ruten som skal sjekkes
+     * @return null eller sluttposisjon til en stige / slange
+     */
     public Rute harStige(Rute posisjon) {
         List<Stige> list = stiger.stream().filter(x -> x.getStartposisjon() == posisjon).toList();
         if (list.isEmpty()) {
