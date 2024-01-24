@@ -5,6 +5,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Lager et stigespill
+ */
 public class Stigespill {
     private final Terning terning;
     private final Brett brett;
@@ -12,20 +15,29 @@ public class Stigespill {
 
     private Spiller vinner = null;
 
+    /**
+     * Laget et stigespill instans
+     */
     public Stigespill() {
         spillere = new ArrayList<>();
         brett = new Brett();
         terning = new Terning();
     }
 
+    /**
+     * Initialiserer spillet ved å hente informasjon om antall spillere og deres navn.
+     */
     public void initSpill() {
         hentSpillere();
     }
 
+    /**
+     * Starter spillet og spiller runde
+     */
     public void spill() {
         int i = 1;
         while (vinner == null) {
-            System.out.println("\nRunde: " + i +"\n--------------------------");
+            System.out.println("\nRunde: " + i + "\n--------------------------");
             i++;
             spillRunde();
         }
@@ -35,17 +47,30 @@ public class Stigespill {
         System.out.println(vinner.getNavn() + " er vinneren av ditta spelet!");
     }
 
+    /**
+     * Sjekker om en spiller har vunnet ved å sammenligne posisjonen til spillerens brikke
+     * med eller overstiger målrutenummeret på brettet (100).
+     *
+     * @param spiller Spilleren som skal sjekkes for seier.
+     * @return {@code true} hvis spilleren har nådd eller overstiger målrutenummeret (100),
+     *         ellers {@code false}.
+     */
     private boolean sjekkSeier(Spiller spiller) {
         return spiller.getBrikke().hentRutePosisjon() >= 100;
     }
 
+    /**
+     * Spiller en runde.
+     * Etter hvert trekk sjekkes om en spiller har vunnet, og spillet avsluttes
+     * hvis en vinner er funnet.
+     */
     private void spillRunde() {
-	    try {
+        try {
             System.out.println("Trykk enter for å starte!");
-		    System.in.read();
-	    } catch (IOException e) {
-	    }
-	    for (Spiller spiller : spillere) {
+            System.in.read();
+        } catch (IOException e) {
+        }
+        for (Spiller spiller : spillere) {
             System.out.println("Spiller: " + spiller.getNavn());
             System.out.println("Du står i: " + spiller.getBrikke().hentRutePosisjon());
             spiller.spillTrekk(terning);
@@ -58,6 +83,10 @@ public class Stigespill {
         }
     }
 
+    /**
+     * Finner hvor mange spillere det skal være og hvilke navn / farge de skal ha.
+     * Oppretter deretter spillerobjekt for spillerne
+     */
     private void hentSpillere() {
         String input = JOptionPane.showInputDialog("Vennligst skriv inn antall spillere.");
         int antallSpillere = Integer.parseInt(input);
