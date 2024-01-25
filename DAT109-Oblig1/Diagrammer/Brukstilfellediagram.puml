@@ -1,0 +1,18 @@
+@startuml Brukstilfelle
+
+skin rose
+
+title Stigespill - Brukstilfelle Diagram
+
+
+rectangle Spillbrett {
+    (:Spill) as s
+    (:Init Spill) as si
+}
+
+:Spiller:
+
+Spiller --> (s)
+Spiller --> (si)
+
+@enduml

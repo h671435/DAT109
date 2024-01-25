@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="648px" preserveAspectRatio="none" style="width:651px;height:648px;background:#FFFFFF;" version="1.1" viewBox="0 0 651 648" width="651px" zoomAndPan="magnify"><defs><filter height="300%" id="fnf1xhdakwbbm" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="none" height="27.6094" id="_title" style="stroke:none;stroke-width:1.0;" width="291" x="177.25" y="10"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="281" x="182.25" y="29.5332">Stigespill - spillTrekk - Sekvens Diagram</text><rect fill="none" filter="url(#fnf1xhdakwbbm)" height="295.5156" style="stroke:#000000;stroke-width:2.0;" width="596.5" x="3" y="291.6797"/><rect fill="none" filter="url(#fnf1xhdakwbbm)" height="79.0547" style="stroke:#000000;stroke-width:2.0;" width="586.5" x="3" y="438.4375"/><rect fill="none" filter="url(#fnf1xhdakwbbm)" height="48.7031" style="stroke:#000000;stroke-width:2.0;" width="236" x="97.5" y="531.4922"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="51" x2="51" y1="80.2188" y2="604.1953"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="137.5" x2="137.5" y1="80.2188" y2="604.1953"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="213.5" x2="213.5" y1="80.2188" y2="604.1953"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="292.5" x2="292.5" y1="80.2188" y2="604.1953"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="359.5" x2="359.5" y1="80.2188" y2="604.1953"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="552.5" x2="552.5" y1="80.2188" y2="604.1953"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="615.5" x2="615.5" y1="80.2188" y2="604.1953"/><rect fill="#FEFECE" filter="url(#fnf1xhdakwbbm)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="74" x="12" y="43.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="19" y="65.1426">:Stigespill</text><rect fill="#FEFECE" filter="url(#fnf1xhdakwbbm)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="74" x="12" y="603.1953"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="19" y="624.7285">:Stigespill</text><rect fill="#FEFECE" filter="url(#fnf1xhdakwbbm)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="57" x="107.5" y="43.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="43" x="114.5" y="65.1426">:Spiller</text><rect fill="#FEFECE" filter="url(#fnf1xhdakwbbm)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="57" x="107.5" y="603.1953"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="43" x="114.5" y="624.7285">:Spiller</text><rect fill="#FEFECE" filter="url(#fnf1xhdakwbbm)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="67" x="178.5" y="43.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="185.5" y="65.1426">:Terning</text><rect fill="#FEFECE" filter="url(#fnf1xhdakwbbm)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="67" x="178.5" y="603.1953"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="185.5" y="624.7285">:Terning</text><rect fill="#FEFECE" filter="url(#fnf1xhdakwbbm)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="57" x="262.5" y="43.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="43" x="269.5" y="65.1426">:Brikke</text><rect fill="#FEFECE" filter="url(#fnf1xhdakwbbm)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="57" x="262.5" y="603.1953"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="43" x="269.5" y="624.7285">:Brikke</text><rect fill="#FEFECE" filter="url(#fnf1xhdakwbbm)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="48" x="333.5" y="43.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="34" x="340.5" y="65.1426">:Brett</text><rect fill="#FEFECE" filter="url(#fnf1xhdakwbbm)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="48" x="333.5" y="603.1953"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="34" x="340.5" y="624.7285">:Brett</text><rect fill="#FEFECE" filter="url(#fnf1xhdakwbbm)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="50" x="525.5" y="43.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="36" x="532.5" y="65.1426">:Stige</text><rect fill="#FEFECE" filter="url(#fnf1xhdakwbbm)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="50" x="525.5" y="603.1953"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="36" x="532.5" y="624.7285">:Stige</text><rect fill="#FEFECE" filter="url(#fnf1xhdakwbbm)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="48" x="589.5" y="43.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="34" x="596.5" y="65.1426">:Rute</text><rect fill="#FEFECE" filter="url(#fnf1xhdakwbbm)" height="31.6094" style="stroke:#A80036;stroke-width:1.5;" width="48" x="589.5" y="603.1953"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="34" x="596.5" y="624.7285">:Rute</text><polygon fill="#A80036" points="126,108.5703,136,112.5703,126,116.5703,130,112.5703" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="51" x2="132" y1="112.5703" y2="112.5703"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="63" x="58" y="107.7139">spillTrekk()</text><polygon fill="#A80036" points="202,138.9219,212,142.9219,202,146.9219,206,142.9219" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="138" x2="208" y1="142.9219" y2="142.9219"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="25" x="145" y="138.0654">trill()</text><polygon fill="#A80036" points="281,169.2734,291,173.2734,281,177.2734,285,173.2734" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="138" x2="287" y1="173.2734" y2="173.2734"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="110" x="145" y="168.417">hentRutePosisjon()</text><polygon fill="#A80036" points="603.5,199.625,613.5,203.625,603.5,207.625,607.5,203.625" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="293" x2="609.5" y1="203.625" y2="203.625"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="103" x="300" y="198.7686">getRutePosisjon()</text><path d="M68,216.625 L68,275.625 L203,275.625 L203,226.625 L193,216.625 L68,216.625 " fill="#FBFB77" filter="url(#fnf1xhdakwbbm)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M193,216.625 L193,226.625 L203,226.625 L193,216.625 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="49" x="74" y="235.1201">nyPos =</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="37" x="78" y="251.4717">trill() +</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="110" x="78" y="267.8232">hentRutePosisjon()</text><path d="M3,291.6797 L64,291.6797 L64,300.0313 L54,310.0313 L3,310.0313 L3,291.6797 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.0;"/><rect fill="none" height="295.5156" style="stroke:#000000;stroke-width:2.0;" width="596.5" x="3" y="291.6797"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="16" x="18" y="306.1748">alt</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="78" x="79" y="305.0986">[nypos &lt;= 100]</text><polygon fill="#A80036" points="347.5,328.3828,357.5,332.3828,347.5,336.3828,351.5,332.3828" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="138" x2="353.5" y1="332.3828" y2="332.3828"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="149" x="145" y="327.5264">nyRute = finnRute(nyPos)</text><polygon fill="#A80036" points="281,358.7344,291,362.7344,281,366.7344,285,362.7344" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="138" x2="287" y1="362.7344" y2="362.7344"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="117" x="145" y="357.8779">setPosisjon(nyRute)</text><polygon fill="#A80036" points="347.5,389.0859,357.5,393.0859,347.5,397.0859,351.5,393.0859" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="138" x2="353.5" y1="393.0859" y2="393.0859"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="168" x="145" y="388.2295">stigeSlutt = harStige(nyRute)</text><polygon fill="#A80036" points="540.5,419.4375,550.5,423.4375,540.5,427.4375,544.5,423.4375" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="359.5" x2="546.5" y1="423.4375" y2="423.4375"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="169" x="366.5" y="418.5811">startPos = getStartPosisjon()</text><path d="M3,438.4375 L64,438.4375 L64,446.7891 L54,456.7891 L3,456.7891 L3,438.4375 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.0;"/><rect fill="none" height="79.0547" style="stroke:#000000;stroke-width:2.0;" width="586.5" x="3" y="438.4375"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="16" x="18" y="452.9326">alt</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="121" x="79" y="451.8564">[posisjon == startPos]</text><polygon fill="#A80036" points="540.5,475.1406,550.5,479.1406,540.5,483.1406,544.5,479.1406" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="359.5" x2="546.5" y1="479.1406" y2="479.1406"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="167" x="366.5" y="474.2842">sluttPos = getSluttPosisjon()</text><polygon fill="#A80036" points="11,505.4922,1,509.4922,11,513.4922,7,509.4922" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="5" x2="358.5" y1="509.4922" y2="509.4922"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="48" x="17" y="504.6357">sluttPos</text><path d="M97.5,531.4922 L158.5,531.4922 L158.5,539.8438 L148.5,549.8438 L97.5,549.8438 L97.5,531.4922 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.0;"/><rect fill="none" height="48.7031" style="stroke:#000000;stroke-width:2.0;" width="236" x="97.5" y="531.4922"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="16" x="112.5" y="545.9873">alt</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="96" x="173.5" y="544.9111">[stigeSlutt != null]</text><polygon fill="#A80036" points="281,568.1953,291,572.1953,281,576.1953,285,572.1953" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="138" x2="287" y1="572.1953" y2="572.1953"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="131" x="145" y="567.3389">setPosisjon(stigeSlutt)</text><!--MD5=[1e0f80561216582f6e4d9ade68591073]
+@startuml Sekvens_spill_spillTrekk
+
+skin rose
+
+title "Stigespill - spillTrekk - Sekvens Diagram"
+
+participant ":Stigespill" as sp
+participant ":Spiller" as s
+participant ":Terning" as t
+participant ":Brikke" as br
+participant ":Brett" as bt
+participant ":Stige" as st
+participant ":Rute" as r
+
+!startsub spillTrekk
+sp -> s: spillTrekk()
+s -> t: trill()
+s -> br: hentRutePosisjon()
+br -> r: getRutePosisjon()
+note over s: nyPos =\n trill() +\n hentRutePosisjon()
+alt nypos <= 100
+	s -> bt: nyRute = finnRute(nyPos)
+	s -> br: setPosisjon(nyRute)
+	s -> bt: stigeSlutt = harStige(nyRute)
+	!includesub Sekvens_spill_harStige.puml!harStige
+	alt stigeSlutt != null
+		s -> br: setPosisjon(stigeSlutt)
+	end
+end
+
+
+!endsub
+
+@enduml
+
+@startuml Sekvens_spill_spillTrekk
+
+skin rose
+
+title "Stigespill - spillTrekk - Sekvens Diagram"
+
+participant ":Stigespill" as sp
+participant ":Spiller" as s
+participant ":Terning" as t
+participant ":Brikke" as br
+participant ":Brett" as bt
+participant ":Stige" as st
+participant ":Rute" as r
+
+sp -> s: spillTrekk()
+s -> t: trill()
+s -> br: hentRutePosisjon()
+br -> r: getRutePosisjon()
+note over s: nyPos =\n trill() +\n hentRutePosisjon()
+alt nypos <= 100
+	s -> bt: nyRute = finnRute(nyPos)
+	s -> br: setPosisjon(nyRute)
+	s -> bt: stigeSlutt = harStige(nyRute)
+bt -> st: startPos = getStartPosisjon()
+alt posisjon == startPos
+	bt -> st: sluttPos = getSluttPosisjon()
+	<- bt: sluttPos
+end
+
+	alt stigeSlutt != null
+		s -> br: setPosisjon(stigeSlutt)
+	end
+end
+
+
+
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 19:01:30 CEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: GB
+--></g></svg>

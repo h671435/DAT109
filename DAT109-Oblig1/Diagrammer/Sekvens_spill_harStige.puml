@@ -1,0 +1,25 @@
+@startuml Sekvens_spill_harStige
+
+skin rose
+
+title "Stigespill - harStige - Sekvens Diagram"
+
+participant ":Stigespill" as sp
+participant ":Spiller" as s
+participant ":Terning" as t
+participant ":Brikke" as br
+participant ":Brett" as bt
+participant ":Stige" as st
+participant ":Rute" as r
+
+-> bt: harStige(posisjon)
+!startsub harStige
+bt -> st: startPos = getStartPosisjon()
+alt posisjon == startPos
+	bt -> st: sluttPos = getSluttPosisjon()
+	<- bt: sluttPos
+end
+
+!endsub
+
+@enduml

@@ -1,0 +1,54 @@
+@startuml Klassediagram
+
+skin rose
+
+title Stigespill - Klasse Diagram
+
+class Stigespill{
+	-Terning : Terning
+	-Brett : Brett
+	-Spillere : List<Spiller>
+	+initSpill()
+	+spill()
+	-sjekkSeier() : boolean
+	-spillRunde()
+	-hentSpillere()
+}
+class Brett{
+	-Ruter : List<Rute>
+	-Stiger : List<Stige>
+	+startPosisjon : Rute
+	+finnRute() : Rute
+	+harStige() : Rute
+}
+class Rute{
+	+Posisjon : Integer
+}
+class Stige{
+	+StartPos : Rute
+	+SluttPos : Rute
+}
+class Spiller{
+	+Navn : String
+	+Brikke : Brikke
+	+spillTrekk()
+}
+class Brikke{
+	+Farge : String
+	+Posisjon : Rute
+}
+class Terning{
+	+Trill() : Integer
+}
+
+Brett "1" *-down- "100 " Rute: Inneholder
+Brett "1   " *-right- " 17" Stige: Inneholder
+Stige "0..1    " -down-o "2" Rute
+Stigespill "1  " o-down- "2..4" Spiller: Spiller
+Stigespill "1" *-down- "1  " Brett
+Stigespill "1   " o-right- "   1" Terning
+Spiller "1" *-down- "1" Brikke: Eier
+Spiller -right- Brett: Kan bruke
+Brikke "0..4" -right- "   1" Rute: Står på
+
+@enduml

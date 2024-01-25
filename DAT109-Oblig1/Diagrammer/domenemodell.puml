@@ -1,0 +1,39 @@
+@startuml Domenemodell
+
+skin rose
+
+title Stigespill - Domenemodell
+
+class Stigespill{
+	vinner
+}
+class Brett{}
+class Terning{
+	verdi
+}
+class Rute{
+	posisjon
+}
+class Spiller{
+	navn
+}
+class Brikke{
+	farge
+}
+class Stige{
+	startposisjon
+	sluttposisjon
+}
+
+Brett "1" -down- "100 " Rute: Inneholder
+Brett "1   " -right- " 17" Stige: Inneholder
+Stige "0..1    " -down- "2" Rute
+Stigespill "1  " -down- "2..4" Spiller: Spiller
+Stigespill "1" -down- "1  " Brett
+Stigespill "1   " -right- "   1" Terning
+Spiller "1" -down- "1" Brikke: Eier
+Spiller -right- Brett: Kan bruke
+Brikke "0..4" -right- "   1" Rute: Står på
+
+
+@enduml

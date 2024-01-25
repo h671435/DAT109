@@ -1,0 +1,30 @@
+@startuml Sekvens_spill
+
+skin rose
+
+title "Stigespill - spill - Sekvens Diagram"
+
+participant ":Stigespill" as sp
+participant ":Spiller" as s
+participant ":Terning" as t
+participant ":Brikke" as br
+participant ":Brett" as bt
+participant ":Stige" as st
+participant ":Rute" as r
+
+!startsub spill
+-> sp: spill()
+loop til vinner
+	loop alle spillere
+		!includesub Sekvens_spill_spillTrekk.puml!spillTrekk
+		sp -> bt: rute = finnRute(nyPos)
+		sp -> s: flyttBrikke(rute)
+		s -> br: setPosisjon(rute)
+		!includesub Sekvens_spill_sjekkSeier.puml!sjekkSeier
+	end
+end
+
+
+!endsub
+
+@enduml

@@ -1,0 +1,34 @@
+@startuml Sekvens_spill_spillTrekk
+
+skin rose
+
+title "Stigespill - spillTrekk - Sekvens Diagram"
+
+participant ":Stigespill" as sp
+participant ":Spiller" as s
+participant ":Terning" as t
+participant ":Brikke" as br
+participant ":Brett" as bt
+participant ":Stige" as st
+participant ":Rute" as r
+
+!startsub spillTrekk
+sp -> s: spillTrekk()
+s -> t: trill()
+s -> br: hentRutePosisjon()
+br -> r: getRutePosisjon()
+note over s: nyPos =\n trill() +\n hentRutePosisjon()
+alt nypos <= 100
+	s -> bt: nyRute = finnRute(nyPos)
+	s -> br: setPosisjon(nyRute)
+	s -> bt: stigeSlutt = harStige(nyRute)
+	!includesub Sekvens_spill_harStige.puml!harStige
+	alt stigeSlutt != null
+		s -> br: setPosisjon(stigeSlutt)
+	end
+end
+
+
+!endsub
+
+@enduml

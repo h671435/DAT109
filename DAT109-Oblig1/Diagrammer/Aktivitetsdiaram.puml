@@ -1,0 +1,30 @@
+@startuml Aktivitetsdiagram
+
+skin rose
+
+title Stigespill - Aktivitets Diagram 
+
+
+start
+:Init Spill;
+repeat
+if (Din tur?) then (ja)
+	:Trill Terning;
+	if (Resulterende posisjon mer enn 100?) then (ja)
+		:Bli stående på samme rute;
+	else (nei)
+		:Flytt til ny posisjon;
+	endif
+	if (Stige Eller Slange?) then (ja)
+		:Flytt brikke til riktig posisjon;
+	else (nei)
+	endif
+else (nei)
+	:Vent på din tur;
+endif
+
+repeat while (Ferdig?)
+
+stop
+
+@enduml
