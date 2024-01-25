@@ -23,4 +23,23 @@ public class Rute {
     public int getRutePosisjon() {
         return rutePosisjon;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+
+        Rute rute = (Rute) o;
+
+	    return rutePosisjon == rute.rutePosisjon;
+    }
+
+    @Override
+    public int hashCode() {
+        return rutePosisjon;
+    }
 }

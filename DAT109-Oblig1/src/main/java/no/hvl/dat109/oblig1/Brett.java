@@ -70,7 +70,7 @@ public class Brett {
      * @return null eller sluttposisjon til en stige / slange
      */
     public Rute harStige(Rute posisjon) {
-        List<Stige> list = stiger.stream().filter(x -> x.getStartposisjon() == posisjon).toList();
+        List<Stige> list = stiger.stream().filter(x -> x.getStartposisjon().equals(posisjon)).toList();
         if (list.isEmpty()) {
             return null;
         }
@@ -87,4 +87,3 @@ public class Brett {
         return sluttPos;
     }
 }
-
